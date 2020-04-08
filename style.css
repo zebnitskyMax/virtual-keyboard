@@ -9,7 +9,7 @@ body {
 .wrapper {
     margin: 0 auto;
     padding: 0;
-    max-width: 650px;
+    max-width: 648px;
 
 }
 
@@ -53,11 +53,11 @@ body {
 
 #button.buttonspace {
     font-size: 0;
-    width: 43%;
-    visibility: none;
+    width: 42%;
+    /* visibility: none; */
 }
 #button.buttonShift{
-    width: 13%;
+    width: 14%;
 }
 #button.buttonCtrl{
     width: 7%;
@@ -68,14 +68,17 @@ body {
     padding: 2px;
 }
 #button.buttonleft{
-    width: 6%;
-    padding: 2px;
+    width: 5%;
+    padding: 1px;
 }
 #button.buttonright{
-    width: 6%;
-    padding: 2px;
+    width: 5%;
+    padding: 1px;
 }
 #button.buttondown{
     width: 6%;
     padding: 2px;
+  
 }
+ 
+ 

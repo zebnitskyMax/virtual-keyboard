@@ -28,15 +28,13 @@ window.onload = function () {
         button.setAttribute("id", 'button');
         button.setAttribute("value", elem);
         button.setAttribute("type", 'button');
-
+        
         button.addEventListener('click', function (event) {
             event.stopPropagation();
             insert(event.target.getAttribute('value'));
         })
-        
         button.innerHTML = elem;
     }
-
 
 
     function lounchCreatElem(someARR) {
@@ -45,10 +43,10 @@ window.onload = function () {
         }
     }
     lounchCreatElem(arr_firstLine);
-    let arr_secondLine = ['Tab', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '[', ']', '\\', 'Del'];
-    let arr_therdLine = ['CapsLock', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ';', '/', 'Enter'];
-    let arr_fourthLine = ['Shift', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ',', '.', '/', 'up', 'Shift'];
-    let arr_fifthLine = ['Ctrl', 'Win', 'Alt', 'space', 'Alt', 'left', 'down', 'right', 'Ctrl'];
+    let arr_secondLine = ['\tTab', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '[', ']', '\\', 'Del'];
+    let arr_therdLine = ['CapsLock', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ';', '/', '\nEnter'];
+    let arr_fourthLine = ['Shift', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ',', '.', '/', '&uarr;', 'Shift'];
+    let arr_fifthLine = ['Ctrl', 'Win', 'Alt', 'space', 'Alt', '&larr;', '&darr;', '&rarr;', 'Ctrl'];
     lounchCreatElem(arr_secondLine);
     lounchCreatElem(arr_therdLine);
     lounchCreatElem(arr_fourthLine);
@@ -64,7 +62,5 @@ window.onload = function () {
         console.log('alt', event.altKey);
         console.log('shift', event.shiftKey);
     });
-
     
-
 }
